@@ -22,7 +22,7 @@ output() {
     fi
 }
 
-repo="horizon-rust/horizon"
+repo="0CYBER/horizon-free"
 asset="horizon-launcher-linux-x86_64.tar.gz"
 
 auth=()

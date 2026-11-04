@@ -22,7 +22,7 @@ stdenv.mkDerivation (finalAttrs: {
   inherit (source) version;
 
   src = fetchurl {
-    url = "https://github.com/horizon-rust/horizon/releases/download/launcher@${finalAttrs.version}/horizon-launcher-linux-x86_64.tar.gz";
+    url = "https://github.com/0CYBER/horizon-free/releases/download/launcher@${finalAttrs.version}/horizon-launcher-linux-x86_64.tar.gz";
     inherit (source) hash;
   };
 
@@ -95,8 +95,8 @@ stdenv.mkDerivation (finalAttrs: {
       Minecraft: Java Edition in Rust. Horizon prepares its resources from your
       own copy of Minecraft: Java Edition.
     '';
-    homepage = "https://playhorizon.dev";
-    changelog = "https://github.com/horizon-rust/horizon/releases/tag/launcher@${finalAttrs.version}";
+    homepage = "https://github.com/0CYBER/horizon-free";
+    changelog = "https://github.com/0CYBER/horizon-free/releases/tag/launcher@${finalAttrs.version}";
     license = lib.licenses.mit;
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     platforms = [ "x86_64-linux" ];
